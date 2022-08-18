@@ -1,8 +1,13 @@
-# discount-application-services
+# oslo-city-bike-service
 
-# Retail Store Discount Application
+# Oslo City Bike Service Application
 
-Is an application to Calculate discount depending on Discount types.
+Is a Java Service that reads from "oslo-city-bike" downstream  
+and transforms the data into a suitable data structure in a NoSQL database.
+
+The Service exposes Rest API  to:
+  1. Keep track of all bike stalls and their position. 
+  2. Keep track of the bike stall status and history every 5 minutes.
 
 ### Prerequisites
 
@@ -37,11 +42,7 @@ http://localhost:8181/city-bike/swagger-ui
 
 * [Java](https://docs.oracle.com/) - The language Java
 * [Spring Framework](https://spring.io/) - Spring framework
-
-
-## UML Class Diagram
-
-![class_diagram](diagrams/discount-uml.PNG)
+* [MongoDB](https://www.mongodb.com/) - MongoDB
 
 ## Authors
 
