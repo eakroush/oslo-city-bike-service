@@ -1,0 +1,46 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overriden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+server:
+  port: 8181
+  servlet:
+    context-path: /city-bike
+
+spring:
+  application:
+    name: cityBikeService
+
+  # Embedded MongoDB Configuration, compatible with Windows 10
+  mongodb:
+    embedded:
+      version: 4.4.5
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test_db
+
+# Custom Env properties
+service:
+  data:
+    reload:
+      cron: 0 0/5 * * * * # Cron Expression <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year>
+  integration:
+    connection:
+      timeout:
+        seconds: 180 #Huge Playload
+    oslo:
+      city-bike:
+        realtime:
+          url: https://gbfs.urbansharing.com
+

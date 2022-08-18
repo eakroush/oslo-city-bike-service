@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "microservice.integration.oslo.city-bike.realtime.url",
+      "type": "java.lang.String",
+      "description": "Description for microservice.integration.oslo.city-bike.realtime.url."
+  }
+] }
