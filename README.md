@@ -46,7 +46,7 @@ http://localhost:8181/city-bike/swagger-ui
 
 ## Authors
 
-* **Eimad Al Akroush**
+* **Eimad Akroush**
 
 ## License
 
